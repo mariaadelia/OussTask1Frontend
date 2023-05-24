@@ -1,0 +1,25 @@
+<div class="container">
+    <h1 class="mt-1 mb-2 text-center">Cadastre-se</h1>
+    <div class="form col">
+        <div class="form-field center">
+            <form #f="ngForm">
+                <div class="form-field">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" ngModel>
+                </div>
+                <div class="form-field">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" ngModel>
+                </div>
+                <div class="form-field">
+                    <label for="senha">Senha</label>
+                    <input type="senha" name="senha" ngModel>
+                </div>
+                <div>
+                    <button class="form-field center" routerLink="/show">Ver usuários</button>
+                    <button class="form-field center" (click)="CreateUser(f.value)" routerLink="/show">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

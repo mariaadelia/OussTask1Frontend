@@ -1,0 +1,29 @@
+<div class="container">
+    <h1 class="mt-1 mb-2 text-center">Usuários</h1>
+    <div class="form col">
+    <div class="form-field center">
+        <table class="table table-striped">  
+            <thead>
+                <div class="form-field center">
+                    <th> Nome</th>
+                </div>
+                <th> Email</th>
+                <th> Senha </th>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let user of users">
+                    <div class="form-field">
+                    <td> {{ user.nome}}</td>
+                    </div>
+                    <td> {{ user.email}}</td>
+                    <td> {{ user.senha}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <button class="form-field center"  routerLink="/post">Cadastrar</button>
+    </div>
+</div>
+</div>
+
